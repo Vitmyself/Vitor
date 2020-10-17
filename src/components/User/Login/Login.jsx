@@ -9,6 +9,7 @@ import './Login.css';
 import calculadora from '../../images/calculadora.jpg'
 
 export default function UserLogin() {
+
   return (
     <div className="login-container">
       <section className="form">
@@ -20,8 +21,12 @@ export default function UserLogin() {
           <input type="text" placeholder='Email' />
           <input type="text" placeholder='Senha' />
 
-          <button className='button' type='submit'>Entrar</button>
 
+          <Link to='/Home'>
+            <button className='button' type='submit'>
+              Entrar
+            </button>
+          </Link>
           <Link className='back-link' to='/register'>
             <FiLogIn size={16} color='#6376BD'/>
             Não tenho cadastro
@@ -29,7 +34,7 @@ export default function UserLogin() {
         </form>
       </section>
 
-      <img src={calculadora} alt="Calculadora"/>
+      <img className='calculadora' src={calculadora} alt="Calculadora"/>
     </div>
   );
 }
