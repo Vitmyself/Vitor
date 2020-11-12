@@ -1,43 +1,41 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/alt-text */
-
-  
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
-import UIButton from 'components/UI/Button/Button';
-import AccounticoLogo from "../../images/accounticoLogo.jpg"
-import calculadora from "../../images/calculadora.jpg"
+import {FiLogIn} from 'react-icons/fi';
+import {Link} from 'react-router-dom';
+import logoImage from "../../images/accounticoLogo.jpg"
 import './Login.css';
+import calculadora from '../../images/calculadora.jpg'
 
-const UserLogin = () => {
+export default function UserLogin() {
+
   return (
-    <div className="user-login">
-      <img className="logo" src={AccounticoLogo} />
-      <div className="imagem"> 
-      <img className="calculadora" src={calculadora} />
-      </div>
+    <div className="login-container">
+      <section className="form">
+        <img src={logoImage} alt='Accountico'/>
 
-      <form autoComplete="nope">
-        <div className="user-login__form-control">
-        
-          <label htmlFor="email">Login:</label>
-         
-          <input id="email" type="text" name="email" autoComplete="off" />
-        </div>
-        <div className="user-login__form-control">
-          <label htmlFor="password">Senha:</label>
-          <input id="password" type="password" name="password" />
-        </div>
-        <UIButton
-          type="submit"
-          theme="contained-green"
-          className="user-login__submit-button"
-          rounded
-        >
-          Entrar
-        </UIButton>
-      </form>
+        <form autoComplete="nope">
+          <h1>Faça seu login</h1>
+
+          <input type="text" placeholder='Email' />
+          <input type="text" placeholder='Senha' />
+
+
+          <Link to='/Home'>
+            <button className='button' type='submit'>
+              Entrar
+            </button>
+          </Link>
+          <Link className='back-link' to='/register'>
+            <FiLogIn size={16} color='#6376BD'/>
+            Não tenho cadastro
+          </Link>
+        </form>
+      </section>
+
+      <img className='calculadora' src={calculadora} alt="Calculadora"/>
     </div>
   );
 }
-export default UserLogin;
+

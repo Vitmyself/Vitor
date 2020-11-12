@@ -1,0 +1,151 @@
+[33mcommit ce6fb39e1b2bfddea2a30ccc3c512eba90486d90[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: d2081ca dc6a55e
+Author: Andrey Hitoshi Onoue <46855524+andreyhitoshi1997@users.noreply.github.com>
+Date:   Fri Oct 2 11:54:59 2020 -0300
+
+    Merge pull request #10 from Accountico/Refatoração-tela-de-registro
+    
+    Refatoração tela de registro
+
+[33mcommit dc6a55e36ba47dccf526c7b9a7e054c16a0ff49f[m[33m ([m[1;31morigin/Refatoração-tela-de-registro[m[33m)[m
+Merge: 2fbc9b1 d2081ca
+Author: Andrey Hitoshi Onoue <46855524+andreyhitoshi1997@users.noreply.github.com>
+Date:   Fri Oct 2 11:52:15 2020 -0300
+
+    Merge branch 'master' into Refatoração-tela-de-registro
+
+[33mcommit d2081ca5fa32ae1e2412eb58b5c6e4f9af89495c[m
+Merge: 95a8673 3659931
+Author: Andrey Hitoshi Onoue <46855524+andreyhitoshi1997@users.noreply.github.com>
+Date:   Thu Oct 1 14:39:08 2020 -0300
+
+    Merge pull request #11 from Accountico/Refatoração-das-rotas
+    
+    Refatoração das rotas
+
+[33mcommit 36599317e41309178712134a44fe5072c4636561[m[33m ([m[1;31morigin/Refatoração-das-rotas[m[33m)[m
+Author: Anna Flávia <anna.castro@truckpad.com.br>
+Date:   Thu Oct 1 14:34:20 2020 -0300
+
+    Ajustes
+
+[33mcommit 2fbc9b1aa3df1cf269475f1929c4300faee2967c[m
+Author: Anna Flávia <anna.castro@truckpad.com.br>
+Date:   Thu Oct 1 14:33:33 2020 -0300
+
+    Ajustes
+
+[33mcommit 62bafbea1a7fdcbf777b75864eaec74fc1ab3651[m
+Author: Anna Flávia <anna.castro@truckpad.com.br>
+Date:   Wed Sep 30 03:49:27 2020 -0300
+
+    Refatoração das rotas da aplicação
+
+[33mcommit 516966581e5914e91674ce4afb88030641f80f9b[m
+Author: Anna Flávia <anna.castro@truckpad.com.br>
+Date:   Wed Sep 30 03:24:37 2020 -0300
+
+    Refatoração da tela de registro
+
+[33mcommit 95a8673eee3c3f6d573e57e4502c54bba75351df[m
+Merge: ce5a45c 724e3fd
+Author: Andrey Hitoshi Onoue <46855524+andreyhitoshi1997@users.noreply.github.com>
+Date:   Wed Sep 30 00:06:13 2020 -0300
+
+    Merge pull request #7 from Accountico/feature/componente_login
+    
+    Subindo a tela de login nas master
+
+[33mcommit 724e3fdcdf64c2ec4300756020e2ff55eab9badb[m[33m ([m[1;31morigin/feature/componente_login[m[33m)[m
+Author: Bruna Carenzi <carenzibruna@gmail.com>
+Date:   Tue Sep 29 22:06:45 2020 -0300
+
+    Subindo a tela de login nas master
+
+[33mcommit ce5a45c37d1da30da8a1b312eda4f61c849510b5[m
+Merge: d910ca3 1e640b0
+Author: Andrey Hitoshi Onoue <46855524+andreyhitoshi1997@users.noreply.github.com>
+Date:   Tue Sep 29 21:54:15 2020 -0300
+
+    Merge pull request #5 from Accountico/feature/componente_login
+    
+    Feature/componente login
+
+[33mcommit 1e640b0b3b91c9233608bcd7f226f40d1eee74a6[m
+Merge: 4b148e6 d910ca3
+Author: Bruna Carenzi <carenzibruna@gmail.com>
+Date:   Tue Sep 29 20:03:58 2020 -0300
+
+    Merge branch 'master' of github.com:Accountico/accountico-front into feature/componente_login
+
+[33mcommit 4b148e60fc22154fc17f8a77c70d87a7f8665a0a[m
+Author: Bruna Carenzi <carenzibruna@gmail.com>
+Date:   Wed Sep 23 00:05:23 2020 -0300
+
+    register quase lá
+
+[33mcommit 0512f110d0fe274916179d2dc20fb482608ac413[m
+Author: andreyhitoshi <anddrey.japa@hotmail.com>
+Date:   Mon Sep 14 11:32:36 2020 -0300
+
+    Subindo alterações de rota da Register
+
+[33mcommit 3465605d9ce9152e391a8fd60a5bbf879b4ace9e[m
+Author: Bruna Carenzi <carenzibruna@gmail.com>
+Date:   Mon Sep 14 00:51:55 2020 -0300
+
+    tela de login PRONTA!
+
+[33mcommit d910ca3bb8b1bf2e3b01152c2f20bb138d5b882c[m
+Author: Bruna Lourenço Carenzi <45660711+brunacarenzi@users.noreply.github.com>
+Date:   Sun Sep 13 04:00:33 2020 -0300
+
+    Update Login.jsx
+
+[33mcommit b30ee1e22dd385b98a52ae87831f9c0ecffe12f0[m
+Author: Bruna Lourenço Carenzi <45660711+brunacarenzi@users.noreply.github.com>
+Date:   Sun Sep 13 03:59:31 2020 -0300
+
+    Update Login.css
+
+[33mcommit 27c8b63578b17cfb5f78d6ba3d5b5f822737c418[m
+Author: Bruna Carenzi <carenzibruna@gmail.com>
+Date:   Sun Sep 13 03:56:53 2020 -0300
+
+    editado dia 13 de set
+
+[33mcommit 0cbc91bc2f127f93fe32276c5c2a742cb15030cf[m
+Author: Andrey Hitoshi Onoue <46855524+andreyhitoshi1997@users.noreply.github.com>
+Date:   Sat Sep 12 00:26:59 2020 -0300
+
+    Create SECURITY.md
+
+[33mcommit cb2474474ede4bee7aef78b3dffe5ceb135050be[m
+Author: andreyhitoshi <anddrey.japa@hotmail.com>
+Date:   Sat Sep 12 00:12:13 2020 -0300
+
+    Arrumando as rotas
+
+[33mcommit 33b4a73ef8e7650557e703da6c8fb86bafcb9513[m
+Author: andreyhitoshi <anddrey.japa@hotmail.com>
+Date:   Fri Sep 11 23:57:05 2020 -0300
+
+    Subindo o componente de login
+
+[33mcommit 3e16abcc2a22eab2f1792675b14961232fc94700[m
+Author: andreyhitoshi <anddrey.japa@hotmail.com>
+Date:   Fri Sep 11 21:54:50 2020 -0300
+
+    Subindo componente de login
+
+[33mcommit 2b22ef6d9aa9a5773a1aab36f9c2e9f6fb182f59[m
+Author: Andrey Hitoshi Onoue <46855524+andreyhitoshi1997@users.noreply.github.com>
+Date:   Wed Sep 9 22:41:43 2020 -0300
+
+    Add files via upload
+
+[33mcommit 868c865ad155145e62abae8825eea521cdb3a851[m
+Author: Andrey Hitoshi Onoue <46855524+andreyhitoshi1997@users.noreply.github.com>
+Date:   Wed Sep 9 22:40:33 2020 -0300
+
+    Initial commit

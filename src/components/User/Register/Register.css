@@ -1,15 +1,10 @@
 h1 {
-    color:#ffffff;
     font-size: 20px;
-    text-align: center;
-    padding:10px;
+    padding:5px;
     padding-top:10px;
     font-style: normal;
     font-family: sans-serif;
-    background-color: #435eb1;
-    
 }
-
 
 .Login-Group {
     padding-left:500px;
@@ -17,7 +12,6 @@ h1 {
     padding-top:50px;
 
 }
-
 
 .Login-Field{
   right:5px;
@@ -31,7 +25,6 @@ h1 {
 
 }
 
-
 .Login-Field-Sobrenome{
   
   right: -5px;
@@ -42,8 +35,6 @@ h1 {
   padding: 15px 10px;
   padding-right:10px;
 }
-
-
 
 .Button-Register{
     position:fixed;
@@ -59,4 +50,3 @@ h1 {
     border: 1px solid;
     
 }
-
