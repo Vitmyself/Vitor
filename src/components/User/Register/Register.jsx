@@ -1,11 +1,7 @@
 import React from 'react'
-
 import { ErrorMessage, Formik, Form, Field } from 'formik'
 import * as yup from 'yup'
 import axios from 'axios'
-import UIButton from 'components/UI/Button/Button'
-// import { history } from '../../history'
-
 import './Register.css'
 
 const PagesRegister = () => {
