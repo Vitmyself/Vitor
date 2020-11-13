@@ -1,9 +1,13 @@
 import React from 'react';
-import PageHome from 'components/User/Home/Home';
+import './Home.css'
 
-const PagesHome = () => (
-  <PageHome />
-);
+const home = () => {
+    return (
+        <div>
+            
+        </div>
+    );
+}
 
-export default PagesHome;
+export default home;
 
