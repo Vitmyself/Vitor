@@ -10,15 +10,6 @@ h1 {
     
 }
 
-
-.Login-Group {
-    padding-left:500px;
-    padding: bottom 5px;
-    padding-top:50px;
-
-}
-
-
 .Login-Field{
   right:5px;
   left:5px;
@@ -43,8 +34,6 @@ h1 {
   padding-right:10px;
 }
 
-
-
 .Button-Register{
   
     position:fixed;
@@ -58,6 +47,5 @@ h1 {
     transform-style: #641c6c;
     transition: background-color  0.5s;
     border: 1px solid;
-    
 }
 
