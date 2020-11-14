@@ -20,6 +20,8 @@ const Register = () => {
             })
     }
     const validations = yup.object().shape({
+        firstName: yup.string().required('Required'),
+        lastName: yup.string().required('Required'),
         email: yup.string().email('Invalid email format').required('Required'),
         password: yup.string().min(8).required('Required')
     })
@@ -27,66 +29,62 @@ const Register = () => {
     return (
         <>
             <div>
-                <h1>Regitro</h1>
+                <h1>Registro</h1>
                 <Formik
                     initialValues={{}}
                     onSubmit={handleSubmit}
                     validationSchema={validations}
                 >
-                    <Form className="Home">
-                        <div className="Home-group">
-                            <label htmlFor='name'>Nome</label>
+                    <Form className="Register">
+                        <div className="Register-group">
                             <Field
-                                type='email'
+                                type='name'
                                 name='firstName'
-                                className="Home-Field"
+                                className="Register-Field"
                             />
                             <ErrorMessage
                                 component="span"
                                 name='firstName'
-                                className="Home-Error"
+                                className="Register-Error"
                             />
                         </div>
-                        <div className="Home-group">
-                            <label htmlFor='email'>Sobrenome</label>
+                        <div className="Register-group">
                             <Field
-                                type='email'
+                                type='text'
                                 name='lastName'
-                                className="Home-Field"
+                                className="Register-Field"
                             />
                             <ErrorMessage
                                 component="span"
                                 name='lastName'
-                                className="Home-Error"
+                                className="Register-Error"
                             />
                         </div>
-                        <div className="Home-group">
-                            <label htmlFor='email'>Email</label>
+                        <div className="Register-group">
                             <Field
                                 type='email'
                                 name='email'
-                                className="Login-Field"
+                                className="Register-Field"
                             />
-                            <ErrorMessage
+                             <ErrorMessage
                                 component="span"
                                 name='email'
-                                className="Login-Error"
-                            />
+                                className="Register-Error"
+                        />
                         </div>
-                        <div className='Login-control'>
-                            <label htmlFor='password'>Password</label>
+                        <div className='Register-control'>
                             <Field
                                 type='password'
                                 name='password'
-                                className="Login-Field"
+                                className="Register-Field"
                             />
                             <ErrorMessage
                                 component="span"
                                 name='password'
-                                className="Login-Error"
+                                className="Register-Error"
                             />
                         </div>
-                        <button className="Login-Btn" type='submit'>Registrar</button>
+                        <button className="Register-Btn" type='submit'>Registrar</button>
                     </Form>
                 </Formik>
             </div>

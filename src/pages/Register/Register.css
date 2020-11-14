@@ -1,51 +1,38 @@
-h1 {
-    color:#ffffff;
-    font-size: 20px;
-    text-align: center;
-    padding:10px;
-    padding-top:10px;
-    font-style: normal;
-    font-family: sans-serif;
-    background-color: #435eb1;
-    
+.Register-Field{
+  border: none;
+  background: rgba(0, 0, 0, .25);
+  color: #fdfdfd;
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius:7px;
+  width: 100%;
+  transition: all .1s linear;
 }
 
-.Login-Field{
-  right:5px;
-  left:5px;
-  position:relative;
-  border-radius: 10px;
-  border: 1px solid #435eb1;
-  height: 20px;
-  padding: 15px 10px;
-  padding-right:10px;
-
+label{
+  color:(0, 0, 0, .25);
 }
 
-
-.Login-Field-Sobrenome{
-  
-  right: -5px;
-  position:relative;
-  border-radius: 10px;
-  border: 1px solid #435eb1;
-  height: 20px;
-  padding: 15px 10px;
-  padding-right:10px;
+.Register-Field:focus {
+  box-shadow: 0 4px 4px rgba(0,0,0,.5);
+  outline: none;
 }
 
-.Button-Register{
-  
-    position:fixed;
-    left: 600px;
-    font-family: sans-serif;
-    padding: 10px 50px;
-    color: #ffffff;
-    bottom: 50px;
-    background:#435eb1;
-    border-radius: 20px;
-    transform-style: #641c6c;
-    transition: background-color  0.5s;
-    border: 1px solid;
+.Register-Error{
+  margin-left: .5rem;
+  margin-top: .5rem;
+  color: red;
 }
 
+.Register-Btn{
+  background: #6719E7;
+  color: #fdfdfd;
+  padding: .5rem 2rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+.Register-Btn:hover{
+ cursor: pointer; 
+}

@@ -35,7 +35,6 @@ const Login = () => {
                 >
                     <Form className="Login">
                         <div className="Login-group">
-                            <label htmlFor='email'>Email</label>
                             <Field
                                 type='email'
                                 name='email'
@@ -48,7 +47,7 @@ const Login = () => {
                             />
                         </div>
                         <div className='Login-control'>
-                            <label htmlFor='password'>Password</label>
+                            <p>Senha:</p>
                             <Field
                                 type='password'
                                 name='password'
