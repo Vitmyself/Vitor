@@ -15,6 +15,8 @@ const Home = () => {
                     <Nav.Link href="#pricing">Pricing</Nav.Link>
                 </Nav>
             </Navbar>
+
+            
         </>
     )
 }
