@@ -11,12 +11,19 @@ import './Register.css';
 
 const Register = () => {
     const handleSubmit = values => {
-        axios.post('http:localhost:8080/v1/api/user')
+        let axiosConfig = {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+          };
+        axios.post('http://127.0.0.1:5000/cadastro', axiosConfig)
             .then(resp => {
                 const { data } = resp
                 if (data) {
-                    history.push('/logins')
+                    history.push('/login')
                 }
+            }).catch((err) => {
+                console.log(err);
             })
     }
     const validations = yup.object().shape({
@@ -91,6 +98,5 @@ const Register = () => {
         </>
     )
 }
-
 
 export default Register;

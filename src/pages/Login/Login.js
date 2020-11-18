@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Component } from 'react';
 
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import * as yup from 'yup'
@@ -8,13 +8,19 @@ import { history } from '../../history'
 
 import './Login.css'
 
-const Login = () => {
+
+const Login = () =>  {
     const handleSubmit = values => {
-        axios.post('http:localhost:8080/v1/api/auth')
+        let axiosConfig = {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+          };
+        axios.post('http://127.0.0.1:5000/login',axiosConfig)
             .then(resp => {
                 const { data } = resp
                 if (data) {
-                    localStorage.setItem('app-token', data)
+                    localStorage.setItem('access_token', data)
                     history.push('/home')
                 }
             })
@@ -69,5 +75,4 @@ const Login = () => {
         </>
     )
 }
-
 export default Login;
