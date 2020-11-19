@@ -13,21 +13,21 @@ function ModalCadastro() {
 
   const handleSubmit = values => {
     let axiosConfig = {
-        headers: {
-            'Content-Type': 'application/json'
-        }
+      headers: {
+        'Content-Type': 'application/json'
+      }
     };
     axios.post('http://127.0.0.1:5000/login', axiosConfig)
-    .then(resp => {
+      .then(resp => {
         const { data } = resp
         if (data) {
-            localStorage.setItem('access_token', data)
-            history.push('/home')
-            console.log(resp)
+          localStorage.setItem('access_token', data)
+          history.push('/home')
+          console.log(resp)
         }
-    })
+      })
     setShow(false);
-}
+  }
 
   return (
     <>
@@ -43,15 +43,15 @@ function ModalCadastro() {
       >
         <Modal.Header>
           <Modal.Title id="example-custom-modal-styling-title">
-            Custom Modal Styling
+            <h1>Cadastro de Serviço</h1>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body
           initialValues={{}}
-          >
+        >
           <Container>
             <Row>
-              <h1>Cadastro de Serviço</h1>
+
               <h2>Cadastro</h2>
               <InputGroup className="mb-3" />
               <FormControl
@@ -125,11 +125,11 @@ function ModalCadastro() {
 
           {/* TO-DO */}
           <Modal.Footer closeButton>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
+            <Button variant="secondary" onClick={handleClose}>
+              Close
           </Button>
-          <Button variant="primary" type="submit" onClick={handleSubmit} >
-            Save Changes
+            <Button variant="primary" type="submit" onClick={handleSubmit} >
+              Save Changes
           </Button>
           </Modal.Footer>
 
