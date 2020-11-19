@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 
 import ModalCadastro from '../../components/ModalCadastro'
+import ModalMovimentacao from '../../components/ModaMovimentacao'
 
 import './Home.css'
   
@@ -14,8 +15,7 @@ import './Home.css'
                         <Nav.Link href="/home">Home</Nav.Link>
                         <Nav.Link href="/orcamentos">Orçamentos</Nav.Link>
                         <ModalCadastro/>
-
-                        <Nav.Link href="/financeiro">Financeiro</Nav.Link>
+                        <ModalMovimentacao />
                     </Nav>
                 </Navbar>
             </>
