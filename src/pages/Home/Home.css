@@ -110,15 +110,18 @@ text-decoration:none;
 
 .Containers{
 	border-radius: 2px solid;
+	text-align: center;
 }
 
 .Container-Receber{
-	/* border-radius: 2px solid ; */
-	color: #09CB34;
+	border: 0.1rem solid #09CB34;
+	border-radius: 10px;
+	color:  #09CB34;;
 }
 
 .Container-Pagar{
-	
+	border: 0.1rem solid #F40606;
+	border-radius: 10px;
 	color: #F40606;
 
 }
