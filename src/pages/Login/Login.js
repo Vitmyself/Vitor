@@ -1,5 +1,6 @@
-import React, { useState, Component } from 'react';
+import React, { Component } from 'react';
 
+import { Navbar, Nav } from 'react-bootstrap';
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import * as yup from 'yup'
 import axios from 'axios'
@@ -9,14 +10,14 @@ import { history } from '../../history'
 import './Login.css'
 
 
-const Login = () =>  {
+const Login = () => {
     const handleSubmit = values => {
         let axiosConfig = {
             headers: {
                 'Content-Type': 'application/json'
             }
-          };
-        axios.post('http://127.0.0.1:5000/login',axiosConfig)
+        };
+        axios.post('http://127.0.0.1:5000/login', axiosConfig)
             .then(resp => {
                 const { data } = resp
                 if (data) {
@@ -66,9 +67,7 @@ const Login = () =>  {
                             />
                         </div>
                         <button className="Login-Btn" type='submit'>Entrar</button>
-                        <Link to="/register">
-                            Registrar
-                        </Link>
+                        <Nav.Link href="/register">Registrar</Nav.Link>
                     </Form>
                 </Formik>
             </div>
