@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Field, ErrorMessage } from 'formik'
+import { Formik, Field, ErrorMessage } from 'formik'
 import * as yup from 'yup'
 import axios from 'axios'
 
@@ -10,10 +10,10 @@ import './Register.css';
 
 function initialState() {
     return {
-        usuario_nome: '',
-        usuario_sobrenome: '',
-        usuario_login: '',
-        usuario_senha: '',
+        usuario_nome: "",
+        usuario_sobrenome: "",
+        usuario_login: "",
+        usuario_senha: "",
     }
 }
 
@@ -43,17 +43,21 @@ const Register = () => {
             data: data
         };
 
-
+        try{
         let res = await axios.post(config)
         .then(res => {
-            if(res.data) {
-                this.setState(data)
-                console.log(JSON.stringify(res.data));
-                history.push('/login')
-            }
-        }).catch((error) => {
-            console.log(error)
-        });
+            // if(res.data) {
+            //     this.setState(data)
+            //     console.log(JSON.stringify(res.data));
+            //     history.push('/login')
+            // }
+            console.log(res.data)
+            console.log(res.config)
+            console.log(res.request)
+        })       
+        }catch(error) {
+            console.log(error.requests  )
+        };
 }
     
 
