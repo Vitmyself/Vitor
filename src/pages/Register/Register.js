@@ -36,15 +36,11 @@ export default class Register extends Component {
             });
     }
 
-    validations = yup.object().shape({
-        firstName: yup.string().required('Required'),
-        lastName: yup.string().required('Required'),
-        email: yup.string().email('Invalid email format').required('Required'),
-        password: yup.string().min(8).required('Required')
-    })
+   
 
 
     render() {
+
         return (
             <div>
                 <h1>Registro</h1>
@@ -55,7 +51,12 @@ export default class Register extends Component {
                         usuario_login: '',
                         usuario_senha: ''
                     }}
-                    validationSchema={validations}
+                    validationSchema={yup.object().shape({
+                        firstName: yup.string().required('Required'),
+                        lastName: yup.string().required('Required'),
+                        email: yup.string().email('Invalid email format').required('Required'),
+                        password: yup.string().min(8).required('Required')
+                    })}
                     onSubmit={(values, action) => {
                         alert(JSON.stringify(values, null, 2));
                         action.setSubmitting(false);
